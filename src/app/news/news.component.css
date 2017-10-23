@@ -1,0 +1,56 @@
+.advertisement img {
+  width: 100%;
+}
+.lastnews {
+  padding-bottom: 8vh;
+}
+.lastnews .newsli {
+  width: 100%;
+  height: 10rem;
+  border-bottom: .2rem solid #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.lastnews .newsli .img {
+  min-width: 9rem;
+  min-height: 9rem;
+  width: 9rem;
+  height: 9rem;
+}
+.lastnews .newsli .img img {
+  width: 100%;
+  height: 100%;
+}
+.lastnews .newsli .text {
+  width: 23rem;
+  height: 9rem;
+  margin-left: .1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.lastnews .newsli .text > div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.lastnews .newsli .text .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.lastnews .newsli .text .stitle {
+  font-size: 1.8rem;
+}
+.lastnews .newsli .text .date_num {
+  display: flex;
+  font-size: 1.5rem;
+}
+.lastnews .newsli .text .date_num .date {
+  margin-right: 1rem;
+}
+.lastnews .newsli .text .date_num .num {
+  margin-left: 1rem;
+  color: #2693d4;
+}

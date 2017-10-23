@@ -290,6 +290,12 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular2-swiper@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/angular2-swiper/-/angular2-swiper-0.8.1.tgz#ce1c925823bf8f38626c36ed4b88b391c1779a60"
+  dependencies:
+    swiper "^3.3.1"
+
 ansi-html@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
@@ -1507,6 +1513,10 @@ dom-serializer@0:
   dependencies:
     domelementtype "~1.1.1"
     entities "~1.1.1"
+
+dom7@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.0.1.tgz#a8a2c802cf17c20b051d9414143061472201a233"
 
 domain-browser@^1.1.1:
   version "1.1.7"
@@ -5051,6 +5061,16 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+swiper@^3.3.1:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-3.4.2.tgz#39d6b410b1a39833e1f72d3b72999df5f5e38392"
+
+swiper@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.0.2.tgz#105947316e253971496f7420d3f56cb146a7c648"
+  dependencies:
+    dom7 "^2.0.1"
 
 symbol-observable@^1.0.1:
   version "1.0.4"

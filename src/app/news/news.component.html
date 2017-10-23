@@ -1,0 +1,34 @@
+<div class="advertisement">
+    <!-- 这里显示轮播图 -->
+    <ks-swiper-container [options]="swipeOptions">
+        <ks-swiper-slide *ngFor="let item of swiperlist">
+            <a href="{{item.article_url}}">
+                <img src="{{item.image_url_big}}">
+            </a>
+        </ks-swiper-slide>
+    </ks-swiper-container>
+</div>
+<div class="lastnews">
+    <!-- 这里显示新闻摘要，包含跳转 -->
+    <a class="newsli" *ngFor="let new of newslist" href="{{new.article_url}}">
+        <div class="img">
+            <img src="{{new.image_url_small}}" alt="">
+        </div>
+        <div class="text">
+            <div class="title">
+                {{new.title}}
+            </div>
+            <div class="stitle">
+                {{new.summary}}
+            </div>
+            <div class="date_num">
+                <div class="date">
+                    {{new.publication_date.substr(0,10)}}
+                </div>
+                <div class="num">
+                    {{(new.pv/10000).toFixed(0)}}万阅
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
