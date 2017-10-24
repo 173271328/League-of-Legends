@@ -2,6 +2,7 @@ import { OnInit, Component, ViewChild, AfterViewInit } from "@angular/core";
 import { KSSwiperContainer, KSSwiperSlide } from 'angular2-swiper';
 import { newsList } from '../../assets/newslist'
 import { bannerNews } from '../../assets/banner';
+import { HeaderNameService } from '../headerchange/header-name.service'
 
 @Component({
   selector: 'app-news',
@@ -9,34 +10,27 @@ import { bannerNews } from '../../assets/banner';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  swiperlist = [];
-  newslist = [];
+  swiperlist: any = bannerNews;
+  newslist: any = newsList;
+  title: string = '资讯';
 
   // swiper的配置
   @ViewChild(KSSwiperContainer)
   swiperContainer: KSSwiperContainer;
-  data: Array<number>;
   swipeOptions: any;
-  constructor() {
+  constructor(service: HeaderNameService) {
     this.swipeOptions = {
       slidesPerView: 1,
       loop: true,
-      spaceBetween: 5,
       autoplay: 2000,
       pagination: '.swiper-pagination',
       paginationClickable: true
     };
+    service.change.emit(this.title);
   }
 
   ngOnInit() {
-    for (var i = 0; i < bannerNews.length; i++) {
-      this.swiperlist.push(bannerNews[i]);
-    };
-    console.log(bannerNews);
-    for (var i =0 ; i<newsList.length ;i++){
-      this.newslist.push(newsList[i])
-    }
-    console.log(this.newslist)
+
   }
 
 

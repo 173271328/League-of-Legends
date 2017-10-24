@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SimpleChanges } from '@angular/core';
+import { HeaderNameService } from '../headerchange/header-name.service'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-tophead',
@@ -6,19 +9,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tophead.component.css']
 })
 export class TopheadComponent implements OnInit {
-  title: String = '';
-  constructor() { }
+  // 组件接收数据
+  public title: string = '';
 
-  ngOnInit() {
-    if (/news/.test(location.href)) {
-      this.title = '资讯';
-    } else if (/gamer/.test(location.href)) {
-      this.title = '玩家'
-    } else if (/heroes/.test(location.href)) {
-      this.title = '英雄'
-    } else if (/video/.test(location.href)) {
-      this.title = '视频'
+
+  constructor(
+    service: HeaderNameService,
+    private router: Router) {
+
+    service.change
+      .subscribe((value: string) => {
+        this.title = value;
+      })
+  }
+  goBack() {
+    if (/news$|gamer$|heroes$|video$/.test(location.href)) {
+      this.router.navigate(['wel']);
+    } else {
+      window.history.back();
     }
+  }
+  ngOnInit() {
+
   }
 
 }

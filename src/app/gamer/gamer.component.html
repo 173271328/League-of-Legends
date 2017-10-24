@@ -1,3 +1,35 @@
-<p>
-  gamer works!
-</p>
+<div class="search">
+  <div class="outframe">
+    <input type="text" placeholder="搜索召唤师" [(ngModel)]="searchwords">
+    <button (click)="goSearch(searchwords)">
+      <i class="iconfont">
+        &#xe69c;
+      </i>
+      <p>
+        搜索
+      </p>
+    </button>
+  </div>
+</div>
+<div class="heroDetail" *ngIf="!heroData">
+  <img src="../../assets/noContent.jpg">
+  <p>暂时木有内容呀~</p>
+</div>
+<div class="newHeroData" *ngIf="heroData">
+  <div class="hero">
+    <img src="" alt="yiyiyiyiyiy">
+    <div class="msg">
+      <div class="gamerName">
+        寒冰手
+      </div>
+      <div class="gamerPrograss">
+        <div class="server">
+          影流
+        </div>
+        <div class="level">
+          等级1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

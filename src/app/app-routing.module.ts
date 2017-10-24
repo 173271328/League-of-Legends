@@ -7,6 +7,7 @@ import { NewsComponent } from './news/news.component'
 import { GamerComponent } from './gamer/gamer.component'
 import { HeroesComponent } from './heroes/heroes.component'
 import { VideoComponent } from './video/video.component'
+import { NewsDetailComponent } from './news-detail/news-detail.component'
 
 const routes: Routes = [
     { path: '', redirectTo: 'wel', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
             { path: 'news', component: NewsComponent },
             { path: 'gamer', component: GamerComponent },
             { path: 'heroes', component: HeroesComponent },
-            { path: 'video', component: VideoComponent }
+            { path: 'video', component: VideoComponent },
+            { path: 'news-detail', component: NewsDetailComponent }
         ]
     },
 ];

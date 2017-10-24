@@ -1,0 +1,37 @@
+.videoList {
+  width: 100%;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.videoList .video {
+  width: 50%;
+  height: 23vh;
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.videoList .video img {
+  width: 90%;
+  height: 70%;
+}
+.videoList .video .detail {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.videoList .video .detail .title {
+  font-size: 1.5rem;
+  color: #505050;
+}
+.videoList .video .detail .time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #505050;
+}
+.videoList .video .detail .time .command {
+  color: #2693d4;
+}

@@ -3,7 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { KSSwiperModule } from "angular2-swiper";
+import { HttpModule } from '@angular/http';
 
+// 服务组件
+import { HeaderNameService } from "./headerchange/header-name.service";
+
+// 页面组件
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -14,6 +19,10 @@ import { HomeComponent } from './home/home.component';
 import { GamerComponent } from './gamer/gamer.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { VideoComponent } from './video/video.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { GamerDetailComponent } from './gamer-detail/gamer-detail.component';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,15 +34,20 @@ import { VideoComponent } from './video/video.component';
     HomeComponent,
     GamerComponent,
     HeroesComponent,
-    VideoComponent
-],
+    NewsDetailComponent,
+    VideoComponent,
+    GamerDetailComponent,
+    VideoDetailComponent,
+    HeroDetailComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    KSSwiperModule
+    KSSwiperModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [HeaderNameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

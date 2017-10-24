@@ -1,3 +1,18 @@
-<p>
-  video works!
-</p>
+<div class="videoList">
+  <div class="video" *ngFor="let item of videolist">
+    <img src="{{item.img}}" alt="">
+    <div class="detail">
+      <div class="title">
+        {{item.title}}
+      </div>
+      <div class="time">
+        <div class="data">
+          {{item.createdate.substr(0,10)}}
+        </div>
+        <div class="command">
+          {{item.comments}}评论
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

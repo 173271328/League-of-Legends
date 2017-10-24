@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderNameService } from '../headerchange/header-name.service'
 
 @Component({
   selector: 'app-heroes',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-
-  constructor() { }
+  title: string = '英雄';
+  constructor(service: HeaderNameService) {
+    service.change.emit(this.title);
+  }
 
   ngOnInit() {
+
   }
 
 }
