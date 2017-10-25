@@ -1,0 +1,51 @@
+.frame {
+  width: 100%;
+}
+.frame .basicdetail {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/searchbg.jpg');
+}
+.frame .basicdetail .headerimg {
+  display: flex;
+  margin-top: 3rem;
+}
+.frame .basicdetail .headerimg img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.frame .basicdetail .level {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.frame .basicdetail .lineup {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.frame .basicdetail .lineup .server {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+.frame .basicdetail .lineup .dan {
+  font-size: 1rem;
+}
+.frame .basicdetail .linedown {
+  display: flex;
+  margin: .5rem 0 1rem;
+}
+.frame .basicdetail .linedown .fightlev {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+.frame .basicdetail .linedown .great {
+  font-size: 1rem;
+}
+.frame .kill {
+  width: 100%;
+}

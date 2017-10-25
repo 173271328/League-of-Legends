@@ -29,3 +29,6 @@
   outline: none;
   border-radius: 3px;
 }
+.welcomegb button:active {
+  background-color: #73baff;
+}

@@ -7,7 +7,6 @@ import { HttpModule } from '@angular/http';
 
 // 服务组件
 import { HeaderNameService } from "./headerchange/header-name.service";
-import { NewsUrlLinsterService } from "./get-news-url/news-url-linster.service"
 
 // 页面组件
 import { AppRoutingModule } from './app-routing.module'
@@ -24,6 +23,8 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { GamerDetailComponent } from './gamer-detail/gamer-detail.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { WhatAreYouDoingComponent } from './what-are-you-doing/what-are-you-doing.component';
+import { TheWarDetailComponent } from './the-war-detail/the-war-detail.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     VideoComponent,
     GamerDetailComponent,
     VideoDetailComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    WhatAreYouDoingComponent,
+    TheWarDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     KSSwiperModule,
     HttpModule
   ],
-  providers: [HeaderNameService, NewsUrlLinsterService],
+  providers: [HeaderNameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

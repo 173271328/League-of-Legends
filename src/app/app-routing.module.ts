@@ -9,6 +9,12 @@ import { HeroesComponent } from './heroes/heroes.component'
 import { VideoComponent } from './video/video.component'
 import { NewsDetailComponent } from './news-detail/news-detail.component'
 import { VideoDetailComponent } from './video-detail/video-detail.component'
+import { WhatAreYouDoingComponent } from './what-are-you-doing/what-are-you-doing.component'
+import { GamerDetailComponent } from './gamer-detail/gamer-detail.component'
+import { HeroDetailComponent } from './hero-detail/hero-detail.component'
+import { TheWarDetailComponent } from './the-war-detail/the-war-detail.component'
+
+
 const routes: Routes = [
     { path: '', redirectTo: 'wel', pathMatch: 'full' },
     { path: 'home', redirectTo: 'home/news', pathMatch: 'full' },
@@ -23,10 +29,13 @@ const routes: Routes = [
             { path: 'heroes', component: HeroesComponent },
             { path: 'video', component: VideoComponent },
             { path: 'news-detail', component: NewsDetailComponent },
-            { path: 'video-detail', component: VideoDetailComponent }
+            { path: 'video-detail', component: VideoDetailComponent },
+            { path: 'gamer-detail', component: GamerDetailComponent },
+            { path: 'hero-detail', component: HeroDetailComponent },
+            { path: 'the-war-detail', component: TheWarDetailComponent }
         ]
     },
-    // {path:'**',component:}
+    { path: '**', component: WhatAreYouDoingComponent }
 ];
 
 @NgModule({
