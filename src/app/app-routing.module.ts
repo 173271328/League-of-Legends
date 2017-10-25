@@ -8,9 +8,10 @@ import { GamerComponent } from './gamer/gamer.component'
 import { HeroesComponent } from './heroes/heroes.component'
 import { VideoComponent } from './video/video.component'
 import { NewsDetailComponent } from './news-detail/news-detail.component'
-
+import { VideoDetailComponent } from './video-detail/video-detail.component'
 const routes: Routes = [
     { path: '', redirectTo: 'wel', pathMatch: 'full' },
+    { path: 'home', redirectTo: 'home/news', pathMatch: 'full' },
     // { path: 'dashboard',  component: DashboardComponent },
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'heroes',     component: HeroesComponent }
@@ -21,9 +22,11 @@ const routes: Routes = [
             { path: 'gamer', component: GamerComponent },
             { path: 'heroes', component: HeroesComponent },
             { path: 'video', component: VideoComponent },
-            { path: 'news-detail', component: NewsDetailComponent }
+            { path: 'news-detail', component: NewsDetailComponent },
+            { path: 'video-detail', component: VideoDetailComponent }
         ]
     },
+    // {path:'**',component:}
 ];
 
 @NgModule({

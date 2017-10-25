@@ -2,7 +2,7 @@
     <!-- 这里显示轮播图 -->
     <ks-swiper-container [options]="swipeOptions">
         <ks-swiper-slide *ngFor="let item of swiperlist">
-            <a href="{{item.article_url}}">
+            <a [routerLink]="['/home/news-detail',{url:item.article_url}]">
                 <img src="{{item.image_url_big}}">
             </a>
         </ks-swiper-slide>
@@ -10,7 +10,7 @@
 </div>
 <div class="lastnews">
     <!-- 这里显示新闻摘要，包含跳转 -->
-    <a class="newsli" *ngFor="let new of newslist" href="{{new.article_url}}">
+    <a class="newsli" *ngFor="let new of newslist" [routerLink]="['/home/news-detail',{url:new.article_url}]">
         <div class="img">
             <img src="{{new.image_url_small}}" alt="">
         </div>

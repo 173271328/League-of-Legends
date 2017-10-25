@@ -1,5 +1,5 @@
 <div class="videoList">
-  <div class="video" *ngFor="let item of videolist">
+  <div class="video" *ngFor="let item of videolist" [routerLink]="['/home/video-detail']" [queryParams]="{'video':item.content}">
     <img src="{{item.img}}" alt="">
     <div class="detail">
       <div class="title">

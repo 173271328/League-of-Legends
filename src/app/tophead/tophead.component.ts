@@ -16,7 +16,6 @@ export class TopheadComponent implements OnInit {
   constructor(
     service: HeaderNameService,
     private router: Router) {
-
     service.change
       .subscribe((value: string) => {
         this.title = value;
@@ -30,7 +29,6 @@ export class TopheadComponent implements OnInit {
     }
   }
   ngOnInit() {
-
+    
   }
-
 }

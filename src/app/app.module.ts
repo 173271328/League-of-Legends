@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 
 // 服务组件
 import { HeaderNameService } from "./headerchange/header-name.service";
+import { NewsUrlLinsterService } from "./get-news-url/news-url-linster.service"
 
 // 页面组件
 import { AppRoutingModule } from './app-routing.module'
@@ -47,7 +48,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     KSSwiperModule,
     HttpModule
   ],
-  providers: [HeaderNameService],
+  providers: [HeaderNameService, NewsUrlLinsterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
