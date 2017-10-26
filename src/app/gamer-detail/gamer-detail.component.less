@@ -21,31 +21,96 @@
             margin-top: 1rem;
             font-size: 1.5rem;
         }
-        .lineup{
+        .lineup {
             display: flex;
             justify-content: center;
             margin-top: 2rem;
-            .server{
+            .server {
                 font-size: 1rem;
                 margin-right: 1.5rem;
             }
-            .dan{
+            .dan {
                 font-size: 1rem;
             }
         }
-        .linedown{
+        .linedown {
             display: flex;
             margin: .5rem 0 1rem;
-            .fightlev{
+            .fightlev {
                 font-size: 1rem;
                 margin-right: 1.5rem;
             }
-            .great{
+            .great {
                 font-size: 1rem;
             }
         }
     }
-    .kill{
+    .kill {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: .1rem solid #999;
+        >div {
+            width: 33.33%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 4rem;
+                margin-bottom: .5rem;
+                color: #2693d4;
+            }
+            p {
+                font-size: 1rem;
+                color: #515151;
+            }
+        }
+    }
+    .gamesresult {
+        width: 100%;
+        padding-bottom: 8vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        .match {
+            width: 90%;
+            border-bottom: .1rem solid #999;
+            box-sizing: border-box;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .heroheader {
+                display: flex;
+                margin-right: 1rem;
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+            }
+            .matchresult {
+                width: 70%;
+                line-height: 2rem;
+                .lineup {
+                    font-size: 1.8rem;
+                    color: #e20000;
+                    font-weight: 500;
+                }
+                .linedown {
+                    font-size: 1.2rem;
+                    color: #515151;
+                }
+            }
+            .go {
+                .iconfont {
+                    font-size: 3rem;
+                }
+            }
+        }
     }
 }

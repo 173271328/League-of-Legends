@@ -48,4 +48,67 @@
 }
 .frame .kill {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: .1rem solid #999;
+}
+.frame .kill > div {
+  width: 33.33%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame .kill > div i {
+  font-size: 4rem;
+  margin-bottom: .5rem;
+  color: #2693d4;
+}
+.frame .kill > div p {
+  font-size: 1rem;
+  color: #515151;
+}
+.frame .gamesresult {
+  width: 100%;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.frame .gamesresult .match {
+  width: 90%;
+  border-bottom: .1rem solid #999;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frame .gamesresult .match .heroheader {
+  display: flex;
+  margin-right: 1rem;
+}
+.frame .gamesresult .match .heroheader img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.frame .gamesresult .match .matchresult {
+  width: 70%;
+  line-height: 2rem;
+}
+.frame .gamesresult .match .matchresult .lineup {
+  font-size: 1.8rem;
+  color: #e20000;
+  font-weight: 500;
+}
+.frame .gamesresult .match .matchresult .linedown {
+  font-size: 1.2rem;
+  color: #515151;
+}
+.frame .gamesresult .match .go .iconfont {
+  font-size: 3rem;
 }
