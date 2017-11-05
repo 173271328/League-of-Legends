@@ -1,13 +1,13 @@
 <div class="herolist">
-    <div class="hero">
-        <img src="" alt="安妮">
+    <div class="hero" *ngFor="let hero of herolist" [routerLink]="['/home/hero-detail',{id:hero.id}]">
+        <img src="http://cdn.tgp.qq.com/pallas/images/champions_id/{{hero.id}}.png" alt="{{hero.cname}}">
         <div class="detail">
             <div class="fastName">
-                黑暗之女
+                {{hero.title}}
             </div>
-            <div class="heroName">
-                安妮 (Annie)
-            </div>
+            <marquee class="heroName" scrollamount="3" scrolldelay="100" onmouseover="this.stop()" onmouseout="this.start()">
+                {{hero.cname}} ({{hero.ename}})
+            </marquee>
         </div>
     </div>
 </div>

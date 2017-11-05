@@ -14,7 +14,6 @@ import { GamerDetailComponent } from './gamer-detail/gamer-detail.component'
 import { HeroDetailComponent } from './hero-detail/hero-detail.component'
 import { TheWarDetailComponent } from './the-war-detail/the-war-detail.component'
 
-
 const routes: Routes = [
     { path: '', redirectTo: 'wel', pathMatch: 'full' },
     { path: 'home', redirectTo: 'home/news', pathMatch: 'full' },

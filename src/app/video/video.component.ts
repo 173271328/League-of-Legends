@@ -16,7 +16,6 @@ export class VideoComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(videoList);
   }
 
 }

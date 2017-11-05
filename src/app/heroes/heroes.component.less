@@ -1,18 +1,18 @@
-.herolist{
+.herolist {
     width: 100%;
     padding-bottom: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .hero{
+    .hero {
         width: 50%;
         height: 10vh;
         margin-top: .2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        img {
             width: 8vh;
             height: 8vh;
             border-radius: 50%;
@@ -20,12 +20,19 @@
             overflow: hidden;
             margin-right: 3vw;
         }
-        .fastName{
-            font-size: 2rem;
-            font-weight: 400;
-        }
-        .heroName{
-            font-size: 1.5rem;
+        .detail {
+            width: 7rem;
+            .fastName {
+                font-size: 2rem;
+                font-weight: 400;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .heroName {
+                font-size: 1.5rem;
+                overflow: hidden;
+                white-space: nowrap;                
+            }
         }
     }
 }

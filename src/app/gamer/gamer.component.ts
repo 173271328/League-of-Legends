@@ -10,7 +10,7 @@ import { GetGamerService } from '../get-gamer/get-gamer.service'
 })
 export class GamerComponent implements OnInit {
   title: string = '玩家';
-  heroData = true;
+  heroData: boolean = false;
   searchwords: string;
 
 
@@ -20,6 +20,7 @@ export class GamerComponent implements OnInit {
   goSearch(sw) {
     this.getHeroService.getHeroes(sw).then((response) => {
       console.log(response);
+      this.heroData = true;
     })
   }
   ngOnInit() {
